@@ -1,5 +1,7 @@
+import { GameHeader } from "./components/GameHeader";
+
 export default function App () {
   return (
-    <h2>Hello React</h2>
+  <GameHeader />
   )
 }
