@@ -1,4 +1,4 @@
-export const GameHeader = () => {
+export const GameHeader = ({score, moves}) => {
     return (
         <div className="max-w-4xl mx-auto px-4 mt-10">
             <div className="bg-white rounded-xl shadow-sm p-6 mb-8 border border-gray-100">
@@ -24,7 +24,7 @@ export const GameHeader = () => {
                                 Score
                             </div>
                             <div className="text-3xl font-bold text-gray-800">
-                                0
+                                {score}
                             </div>
                         </div>
 
@@ -37,7 +37,7 @@ export const GameHeader = () => {
                                 Moves
                             </div>
                             <div className="text-3xl font-bold text-gray-800">
-                                0
+                                {moves}
                             </div>
                         </div>
                     </div>
